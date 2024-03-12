@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    h1{
+        text-align: center;
+        font-size: small;
+        padding: 0%;
+    }
+    h2{
+        text-align: center;
+        color: rgb(79, 79, 247);
+        
+    }
+    p{
+        text-align: center;
+        font-size: larger;
+        
+    }
+
+    li{
+        list-style: none;
+        text-align: center;
+        color: gray;
+        font-size: small;
+        padding: 10px 0;
+        width: 250px;
+        margin: 0 auto;
+       
+    }
+    ul :hover{
+        background-color: peachpuff;
+        padding: 0% 
+        
+    }
+
+    button{
+     margin: 20px 350px 20px 650px;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 0% auto;
+  display: block ;
+  background: #1a64d6;
+  border-radius: 20px;
+  background-color: #2629e9;
+  border: #2629e9;
+  transition: all 150ms ease-in-out;
+    }
+
+    button :hover {
+     background:white;
+     color:#1a64d6;
+     border: #2629e9;
+     
+    }
+
+   p{
+    color: gray;
+    font-size: small;
+   }
+    ul{
+        padding: 0;
+    }
+    
+</style>
+  <h1>
+    ⛅
+  </h1>
+  <h2>
+    Currently 21&#176 in Tokyo
+  </h2>
+    <p>
+        13&#176 / <b>23&#176</b>
+    </p>
+
+    <ul>
+        <li><strong>🌨️Tomorrow</strong> <br>10&#176 / 22&#176 <br></li>
+        <br><br>
+
+        <li> <strong> 🌤️Saturday</strong><br> 15&#176 / 17&#176 </li><br>
+<br>
+        <li> <strong>☀️Sunday</strong><br> 25&#176 / 28&#176 </li>
+        <br><br/><br>
+
+        <button>
+            Change city
+        </button>
+<br>
+    <p>
+        Coded by Lesego Mokoena
+
+  <script>
+      function changeCity() {
+        let city = prompt("What city do you live in?");
+
+        let temperature = prompt("What temperature is it?");
+        {
+          if (temperature < 0) {
+            let h2 = document.querySelector("h2");
+            h2.innerHTML =
+              "🥶<br />Currently " +
+              temperature +
+              "°C in " +
+              city;
+          } else {}
+            let h2 = document.querySelector("h2");
+            h2.innerHTML =
+              "🌞<br />Currently " + temperature + "°C in " + city;
+          }
+        }
+      
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", changeCity);
+
+      
+    </script>
+  
+    </p>
+    </ul>
+
+</body>
+</html>
